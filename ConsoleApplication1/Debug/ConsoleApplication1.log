@@ -1,0 +1,2 @@
+﻿  ConsoleApplication1.cpp
+C:\Users\128dm\source\repos\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(4,10): fatal error C1083: Не удается открыть файл включение: opencv2/highgui/highgui.hpp: No such file or directory,
