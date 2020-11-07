@@ -185,14 +185,14 @@ void drive()
 			int pixels_b = bottom.rows * bottom.cols;
 			int zeropixels_b = pixels_b - countNonZero(bottom);
 
-			if(zeropixels_b > 80 && zeropixels_t > 80){
+			if(zeropixels_b > 100 && zeropixels_t > 150){
 				omniDrive.setVelocity(100, 0, 0);
 			}
-			if (zeropixels_tr > 200 && zeropixels_tr > zeropixels_t) {
-				omniDrive.setVelocity(0, 20, -10);
+			if (zeropixels_tr > 100 && zeropixels_tr > zeropixels_t && zeropixels_tr > zeropixels_tl) {
+				omniDrive.setVelocity(30, 30, -8);
 			}
-			if (zeropixels_tl > 200 && zeropixels_tl > zeropixels_t) {
-				omniDrive.setVelocity(0, -20, 10);
+			if (zeropixels_tl > 100 && zeropixels_tl > zeropixels_t && zeropixels_tl > zeropixels_tr) {
+				omniDrive.setVelocity(30, -30, 8);
 			}
 			/*
 			else {
